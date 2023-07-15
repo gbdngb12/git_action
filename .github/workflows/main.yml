@@ -27,7 +27,7 @@ jobs:
         run: python -c "import sys; print(sys.version)"
 
       - name: Save output artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: "output-${{ matrix.python-version }}"
-          path: "output.txt"
+          path: "release"
